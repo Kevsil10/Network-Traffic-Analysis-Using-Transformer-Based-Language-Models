@@ -1,63 +1,93 @@
-# Comparative Analysis of Large Language Models (LLMs) Applied to 5G Network Traffic
+# Network Traffic Analysis Using Transformer-Based Language Models
+
+**Master's Thesis Project | Big Data · Machine Learning · Deep Learning · Telecommunications**
 
 ## Overview
 
-This project presents a comparative analysis of Large Language Models (LLMs) applied to 5G network traffic data.
+This repository documents a research project developed as part of a Master's thesis in Big Data.
 
-The study evaluates the performance of three transformer-based language models:
+The project explores the application of transformer-based language models to network traffic classification, examining their potential use in telecommunications and network security analysis.
 
-* BERT
-* RoBERTa
-* GPT-2
+Three models are considered in the original research:
 
-The main objective is to analyze their applicability to the processing and classification of 5G network traffic data and identify the strengths and limitations of each model in this context.
+- **BERT** — Bidirectional Encoder Representations from Transformers
+- **RoBERTa** — Robustly Optimized BERT Pretraining Approach
+- **GPT-2** — Generative Pre-trained Transformer 2
 
-## Objectives
+The repository is being organized as a technical portfolio documenting the experiments, methodology, and results of the original research.
 
-* Analyze the applicability of LLMs to 5G network traffic.
-* Compare the performance of BERT, RoBERTa, and GPT-2.
-* Evaluate the results obtained using relevant performance metrics.
-* Identify potential applications of these models in telecommunications and network analysis.
+## Project Objectives
 
-## Models
+- Explore the use of transformer architectures for network traffic classification.
+- Prepare and process network traffic datasets using Python.
+- Apply pretrained language models to classification tasks.
+- Evaluate experimental results using established classification metrics.
+- Investigate potential applications in telecommunications and network security.
 
-| Model   | Architecture | Main characteristic                     |
-| ------- | ------------ | --------------------------------------- |
-| BERT    | Transformer  | Bidirectional contextual representation |
-| RoBERTa | Transformer  | Optimized BERT architecture             |
-| GPT-2   | Transformer  | Autoregressive language model           |
+## Dataset
+
+The published BERT experiment uses **UNSW-NB15**, a network intrusion detection dataset containing normal and malicious traffic.
+
+The experiment transforms selected categorical network features into textual representations for processing by BERT.
+
+**Scope clarification:** UNSW-NB15 is not a native 5G traffic dataset. The project investigates methods relevant to network traffic analysis, with potential applications to future telecommunications environments.
+
+## Published Experiments
+
+| Model | Description | Status |
+|---|---|---|
+| BERT | Binary network traffic classification | Notebook published |
+| RoBERTa | Transformer-based classification experiment | Documentation pending |
+| GPT-2 | Language-model-based experiment | Documentation pending |
+
+### BERT Experiment
+
+[View BERT Experiment Notebook](notebook/bert_experiment.ipynb)
+
+The notebook documents:
+
+- Dataset loading and preprocessing.
+- Conversion of selected network features into textual input.
+- Balanced training sample selection.
+- BERT tokenization and fine-tuning.
+- Binary classification of normal and attack traffic.
+- Evaluation using classification metrics and confusion matrices.
+
+The notebook contains saved experimental outputs. These represent the recorded research results and have not yet been independently reproduced in a new environment.
 
 ## Technologies
 
-* Python
-* Natural Language Processing (NLP)
-* Transformers
-* Machine Learning
-* Deep Learning
-* 5G Networks
-* Data Analysis
+- Python
+- Pandas and NumPy
+- PyTorch
+- Hugging Face Transformers
+- Scikit-learn
+- Matplotlib and Seaborn
+- Google Colab
+- Git and GitHub
 
-## Project Structure
-
-The repository will contain the following components:
+## Repository Structure
 
 ```text
+llm-5g-network-traffic-analysis/
 ├── README.md
-├── data/
-├── notebooks/
-├── src/
-├── models/
-├── results/
-├── docs/
-└── requirements.txt
+├── notebook/
+│   └── bert_experiment.ipynb
+└── docs/
 ```
 
-## Research
+Additional research artifacts and documentation will be incorporated progressively.
 
-This repository is based on the author's Master's thesis focused on the comparative analysis of Large Language Models applied to 5G network traffic.
+## Research Context
+
+This project originates from a Master's thesis investigating transformer-based language models for network traffic analysis.
+
+The current publication focuses on documenting the work completed during the research. Further code refactoring, reproducibility improvements, and experimental validation are planned as subsequent development activities.
 
 ## Author
 
 **Kevin Silva Castro**
 
-Telematics Engineer | Big Data | Cloud Computing | Telecommunications
+Telematics Engineer | Master's in Big Data | Cloud Computing | Telecommunications
+
+**Professional interests:** Data Analytics, Machine Learning, AI Engineering, Network Analytics and Cloud Technologies.
